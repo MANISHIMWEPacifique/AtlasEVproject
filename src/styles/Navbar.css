@@ -1,0 +1,270 @@
+/* =====================================================
+   ATLAS EV MOTORS – Navbar (Always White)
+   ===================================================== */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: #ffffff;
+  border-bottom: 1px solid var(--color-outline-variant);
+  transition: box-shadow var(--transition);
+}
+
+.navbar.scrolled {
+  box-shadow: 0 2px 16px rgba(6, 37, 51, 0.08);
+}
+
+.navbar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  gap: var(--space-3);
+}
+
+/* ── Logo ───────────────────────────────── */
+.nav-logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  flex-shrink: 0;
+  height: 80px;
+  overflow: hidden;
+}
+
+.nav-logo-plate {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #ffffff;
+  height: 80px;
+  overflow: hidden;
+}
+
+/* Real logo image */
+.nav-logo-img {
+  height: 140px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+}
+
+.nav-logo-icon {
+  width: 38px;
+  height: 38px;
+  background: var(--color-primary-container);
+  border-radius: var(--radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  flex-shrink: 0;
+}
+
+
+.nav-logo-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+  color: var(--color-primary);
+}
+
+.nav-logo-text strong {
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  color: var(--color-primary);
+}
+
+.nav-logo-text span {
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-on-surface-variant);
+}
+
+/* ── Nav Links ──────────────────────────── */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  flex: 1;
+  justify-content: center;
+  list-style: none;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  padding: 8px 14px;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--color-on-surface);
+  border-radius: var(--radius);
+  transition: color var(--transition-fast), background var(--transition-fast);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.nav-link:hover {
+  color: var(--color-primary-container);
+  background: var(--color-surface-container-low);
+}
+
+.nav-link.active {
+  color: var(--color-secondary-action);
+  font-weight: 600;
+  background: var(--color-secondary-tint);
+}
+
+/* ── Actions ────────────────────────────── */
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+.nav-icon-btn {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: transparent;
+  color: var(--color-on-surface-variant);
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: background var(--transition-fast), color var(--transition-fast);
+}
+
+.nav-icon-btn:hover {
+  background: var(--color-surface-container);
+  color: var(--color-primary);
+}
+
+.nav-whatsapp-btn {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 9px 16px;
+  background: var(--color-secondary-action);
+  color: #ffffff;
+  font-size: 13.5px;
+  font-weight: 600;
+  border-radius: var(--radius);
+  text-decoration: none;
+  transition: background var(--transition-fast), transform var(--transition-fast),
+    box-shadow var(--transition-fast);
+}
+
+.nav-whatsapp-btn:hover {
+  background: #1f6626;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(41, 129, 50, 0.4);
+}
+
+/* ── Mobile ─────────────────────────────── */
+.nav-mobile-right {
+  display: none;
+  align-items: center;
+  gap: 4px;
+}
+
+.nav-mobile-toggle {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: var(--radius);
+  background: none;
+  border: none;
+  transition: background var(--transition-fast);
+}
+
+.nav-mobile-toggle:hover {
+  background: var(--color-surface-container);
+}
+
+.nav-mobile-toggle span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: var(--color-on-surface);
+  border-radius: 2px;
+  transition: all var(--transition);
+}
+
+.nav-mobile-menu {
+  display: none;
+  flex-direction: column;
+  padding: 12px var(--margin-mobile) 20px;
+  border-top: 1px solid var(--color-outline-variant);
+  background: #ffffff;
+  gap: 3px;
+}
+
+.nav-mobile-menu.open {
+  display: flex;
+}
+
+.nav-mobile-link {
+  display: block;
+  padding: 12px 16px;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--color-on-surface);
+  border-radius: var(--radius);
+  text-decoration: none;
+  transition: background var(--transition-fast), color var(--transition-fast);
+}
+
+.nav-mobile-link:hover,
+.nav-mobile-link.active {
+  background: var(--color-secondary-tint);
+  color: var(--color-secondary-action);
+  font-weight: 600;
+}
+
+.nav-mobile-whatsapp {
+  margin-top: var(--space-2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px;
+  background: var(--color-secondary-action);
+  color: #ffffff;
+  font-weight: 600;
+  border-radius: var(--radius);
+  text-decoration: none;
+  transition: background var(--transition-fast);
+}
+
+.nav-mobile-whatsapp:hover {
+  background: #1f6626;
+}
+
+/* Responsive */
+@media (max-width: 960px) {
+  .nav-links {
+    display: none;
+  }
+
+  .nav-actions {
+    display: none;
+  }
+
+  .nav-mobile-right {
+    display: flex;
+  }
+}

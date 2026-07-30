@@ -1,0 +1,97 @@
+/* =====================================================
+   ATLAS EV MOTORS – Design System Variables
+   ===================================================== */
+
+:root {
+  /* --- Brand Colors --- */
+  --color-primary: #062533;
+  --color-primary-container: #1f3b49;
+  --color-primary-light: #3e5c6b;
+  --color-inverse-primary: #aecbdc;
+
+  --color-secondary: #0e6e21;
+  --color-secondary-action: #298132;
+  --color-secondary-container: #9df899;
+  --color-secondary-tint: #e8f5ea;
+
+  --color-surface: #f8fafb;
+  --color-surface-container: #eceeef;
+  --color-surface-container-low: #f2f4f5;
+  --color-surface-container-high: #e6e8e9;
+  --color-surface-white: #ffffff;
+
+  --color-on-surface: #191c1d;
+  --color-on-surface-variant: #42474b;
+  --color-outline: #72787c;
+  --color-outline-variant: #c2c7cb;
+
+  --color-error: #ba1a1a;
+  --color-success: #0e6e21;
+
+  /* --- Typography Scale --- */
+  --font-family: 'Inter', system-ui, sans-serif;
+
+  --fs-display: 48px;
+  --fw-display: 700;
+  --lh-display: 56px;
+  --ls-display: -0.02em;
+
+  --fs-display-mobile: 32px;
+  --lh-display-mobile: 40px;
+  --ls-display-mobile: -0.01em;
+
+  --fs-headline: 28px;
+  --fw-headline: 600;
+  --lh-headline: 36px;
+
+  --fs-body-lg: 20px;
+  --lh-body-lg: 32px;
+
+  --fs-body: 17px;
+  --lh-body: 26px;
+
+  --fs-label: 15px;
+  --fw-label: 600;
+  --lh-label: 22px;
+  --ls-label: 0.05em;
+
+  --fs-price: 20px;
+  --fw-price: 700;
+  --lh-price: 24px;
+
+  /* --- Spacing --- */
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 32px;
+  --space-5: 40px;
+  --space-6: 48px;
+  --space-8: 64px;
+  --space-10: 80px;
+  --space-12: 96px;
+
+  --container-max: 1280px;
+  --gutter: 24px;
+  --margin-desktop: 64px;
+  --margin-mobile: 20px;
+  --section-gap: 80px;
+
+  /* --- Border Radius --- */
+  --radius-sm: 2px;
+  --radius: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+  --radius-xl: 12px;
+  --radius-2xl: 16px;
+  --radius-full: 9999px;
+
+  /* --- Shadows --- */
+  --shadow-card: 0px 4px 20px rgba(31, 59, 73, 0.08);
+  --shadow-card-hover: 0px 8px 32px rgba(31, 59, 73, 0.14);
+  --shadow-nav: 0px 1px 0px rgba(0, 0, 0, 0.08);
+
+  /* --- Transitions --- */
+  --transition-fast: 150ms ease;
+  --transition: 250ms ease;
+  --transition-slow: 400ms ease;
+}

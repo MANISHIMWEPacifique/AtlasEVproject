@@ -1,0 +1,223 @@
+/* PreOrder Page */
+.preorder-page {}
+
+.preorder-header {
+  background: var(--color-primary);
+  padding: 52px 0 44px;
+}
+
+.preorder-headline {
+  font-size: 38px;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: -0.02em;
+  margin-bottom: 10px;
+}
+
+.preorder-sub {
+  font-size: 16px;
+  color: rgba(255,255,255,0.65);
+  max-width: 520px;
+  line-height: 1.65;
+}
+
+.preorder-section-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.preorder-section-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin: 6px 0 12px;
+  letter-spacing: -0.01em;
+}
+
+.preorder-section-sub {
+  font-size: 15px;
+  color: var(--color-on-surface-variant);
+  line-height: 1.6;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* Steps */
+.preorder-steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  position: relative;
+}
+
+.preorder-steps::before {
+  content: '';
+  position: absolute;
+  top: 52px;
+  left: 12.5%;
+  right: 12.5%;
+  height: 2px;
+  background: linear-gradient(to right, var(--color-secondary-action), var(--color-primary-container));
+  z-index: 0;
+}
+
+.preorder-step {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 24px;
+  z-index: 1;
+}
+
+.preorder-step-icon {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.preorder-step-num {
+  width: 40px;
+  height: 40px;
+  background: var(--color-primary-container);
+  color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 800;
+  margin-bottom: 16px;
+  border: 3px solid var(--color-surface-container-low);
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 0 0 4px var(--color-surface-container-low);
+}
+
+.preorder-step:first-child .preorder-step-num {
+  background: var(--color-secondary-action);
+}
+
+.preorder-step-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--color-primary-container);
+  margin-bottom: 8px;
+  line-height: 1.3;
+}
+
+.preorder-step-desc {
+  font-size: 13px;
+  color: var(--color-on-surface-variant);
+  line-height: 1.6;
+}
+
+/* CTA band */
+.preorder-cta-band {
+  background: var(--color-primary-container);
+  padding: 40px 0;
+  margin: 48px 0;
+}
+
+.preorder-cta-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+}
+
+.preorder-cta-inner h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 6px;
+}
+
+.preorder-cta-inner p {
+  font-size: 14px;
+  color: rgba(255,255,255,0.7);
+  line-height: 1.55;
+  max-width: 480px;
+}
+
+.preorder-cta-btns {
+  display: flex;
+  gap: 12px;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+}
+
+/* FAQ */
+.preorder-faq-layout {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 64px;
+  align-items: start;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.faq-item {
+  border: 1.5px solid var(--color-outline-variant);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: var(--color-surface-white);
+  transition: border-color var(--transition-fast);
+}
+
+.faq-item.open {
+  border-color: var(--color-primary-container);
+}
+
+.faq-question {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 18px 20px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-family);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--color-primary-container);
+  text-align: left;
+  transition: background var(--transition-fast);
+}
+
+.faq-question:hover { background: var(--color-surface-container-low); }
+
+.faq-chevron {
+  flex-shrink: 0;
+  transition: transform var(--transition);
+}
+
+.faq-item.open .faq-chevron {
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  padding: 0 20px 18px;
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--color-on-surface-variant);
+}
+
+@media (max-width: 900px) {
+  .preorder-steps { grid-template-columns: 1fr 1fr; }
+  .preorder-steps::before { display: none; }
+  .preorder-step { padding: var(--space-4); }
+  .preorder-cta-inner { flex-direction: column; text-align: center; }
+  .preorder-cta-btns { justify-content: center; }
+  .preorder-faq-layout { grid-template-columns: 1fr; gap: 32px; }
+}
+
+@media (max-width: 600px) {
+  .preorder-steps { grid-template-columns: 1fr; }
+}
