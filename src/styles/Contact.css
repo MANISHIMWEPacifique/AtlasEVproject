@@ -46,14 +46,14 @@
 /* ── Info Strip ── */
 .contact-info-strip {
   background: var(--color-surface-container-low);
-  padding: 40px 0;
+  padding: 48px 0;
   border-bottom: 1px solid var(--color-outline-variant);
 }
 
 .contact-info-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 16px;
+  gap: 20px;
 }
 
 .contact-info-card {

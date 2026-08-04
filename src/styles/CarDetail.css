@@ -337,8 +337,8 @@
 .related-cars-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  margin-top: var(--space-4);
+  gap: 28px;
+  margin-top: var(--space-5);
 }
 
 .related-cars-cta {

@@ -7,7 +7,7 @@
 /* Header */
 .cars-header {
   background: var(--color-primary);
-  padding: 48px 0 40px;
+  padding: 52px 0 48px;
 }
 
 .cars-headline {
@@ -42,9 +42,9 @@
 .cars-filter-inner {
   display: flex;
   align-items: center;
-  gap: 10px;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  gap: 12px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   flex-wrap: wrap;
 }
 
@@ -158,15 +158,15 @@
 
 /* Body */
 .cars-body {
-  padding-top: var(--space-5);
-  padding-bottom: var(--space-10);
+  padding-top: var(--space-10);
+  padding-bottom: var(--space-12);
 }
 
 .cars-results-meta {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: var(--space-4);
+  margin-bottom: var(--space-5);
   font-size: 14px;
   color: var(--color-on-surface-variant);
 }
@@ -186,7 +186,7 @@
 .cars-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 28px;
 }
 
 /* Empty state */
