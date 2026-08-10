@@ -110,7 +110,7 @@ export default function Navbar() {
                 aria-label="Toggle navigation"
               >
                 <span style={mobileOpen ? { transform: 'rotate(45deg) translateY(7px)' } : {}} />
-                <span style={mobileOpen ? { opacity: 0 } : {}} />
+                
                 <span style={mobileOpen ? { transform: 'rotate(-45deg) translateY(-7px)' } : {}} />
               </button>
             </div>
