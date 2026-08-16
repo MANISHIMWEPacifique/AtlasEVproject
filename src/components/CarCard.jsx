@@ -9,7 +9,7 @@ export default function CarCard({ car }) {
     price,
     status,
     range,
-    battery,
+    
     bodyType,
     year,
     mileage,
