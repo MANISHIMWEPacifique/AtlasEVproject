@@ -10,7 +10,7 @@ export default function CarCard({ car }) {
     status,
     range,
     
-   
+    bodyType,
     year,
     mileage,
   } = car;
